@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Nunito light";
+    src: local("Nunito regular"), url(../fonts/Nunito-Light.ttf) format("ttf"), url(Nunito-Light) format("ttf"), url(../fonts/Nunito-Light.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Nunito regular";
+    src: local("Nunito regular"), url(../fonts/Nunito-Regular.ttf) format("ttf"), url(Nunito-regular.ttf) format("ttf"), url(../fonts/Nunito-regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Nunito bold";
+    src: local("Nunito bold"), url(../fonts/Nunito-Bold.ttf) format("ttf"), url(Nunito-Bold.ttf) format("ttf"), url(../fonts/Nunito-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Nunito extra-bold";
+    src: local("Nunito extra-bold"), url(../fonts/Nunito-ExtraBold.ttf) format("ttf"), url(Nunito-ExtraBold.ttf) format("ttf"), url(../fonts/Nunito-ExtraBold.ttf) format("truetype");
+}
+body{
+    font-family: "Nunito regular";
+}
+html{
+    scroll-behavior: smooth;
+}
+a:hover{
+    color: black !important;
+    text-decoration: none;
+}
+a:focus{
+    outline: 0px !important;
+    color: #000 !important;
+}
+header{
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    width: 100%;
+    transition: 0.5s;
+}
+.sticky{
+    box-shadow: -2px -11px 15px 0px;
+}
+.navbar{
+    width: 100%;
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar-dark .navbar-brand {
+    color: #3c3c3c;
+    font-family: fantasy;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.main-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/banner-bg.jpg);
+    background-attachment: fixed;
+    padding: 50px 0 0 0;
+    background-size: cover;
+}
+.btn-main{
+    background: #44b272;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 19px;
+    transition: 0.5s;
+}
+.btn-main:hover{
+    background: #2d774c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 19px;
+    transition: 0.5s;
+}
+.btn-main a{
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-main a:hover{
+    color: #fff !important;
+    transition: 0.5s;
+}
+.banner-heading{
+    padding: 108px 0 155px 0;
+}
+.banner-heading button{
+    margin-top: 26px;
+}
+.banner-heading h1{
+    color: #fff;
+    font-family: 'Nunito extra-bold';
+    font-weight: 700;
+    font-size: 46px;
+}
+.banner-heading p{
+    width: 45%;
+    color: #fff;
+    font-size: 18px;
+}
+.service{
+    margin-top: -84px;
+}
+.service-card{
+    background: #fff;
+    padding: 19px 38px;
+    box-shadow: 2px 2px 6px 0px #d4d4d4;
+    text-align: center;
+    transition: 0.5s;
+}
+.service-card:hover{
+    background: #44b272;
+    transition: 0.5s;
+}
+.service-card:hover i{
+    color: #fff;
+    transition: 0.5s;
+}
+.service-card:hover h3{
+    color: #fff;
+    transition: 0.5s;
+}
+.service-card:hover p{
+    color: #fff;
+    transition: 0.5s;
+}
+.service-card i{
+    color: #3c3c3c;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.service-card h3{
+    color: #3c3c3c;
+    padding: 12px 0 0 0;
+    font-family: 'nunito bold';
+    transition: 0.5s;
+}
+.service-card p{
+    color: #3c3c3c;
+    transition: 0.5s;
+}
+
+
+
+
+
+.service-card1{
+    background: #44b272;
+    padding: 19px 38px;
+    text-align: center;
+    transition: 0.5s;
+}
+.service-card1:hover{
+    background: #fff;
+    box-shadow: 2px 2px 6px 0px #d4d4d4;
+    transition: 0.5s;
+}
+.service-card1:hover i{
+    color: #3c3c3c;
+    transition: 0.5s;
+}
+.service-card1:hover h3{
+    color: #3c3c3c;
+    transition: 0.5s;
+}
+.service-card1:hover p{
+    color: #3c3c3c;
+    transition: 0.5s;
+}
+
+.service-card1 i{
+    color: #fff;
+    font-size: 40px;
+    transition: 0.5s;
+}
+.service-card1 h3{
+    color: #fff;
+    padding: 12px 0 0 0;
+    font-family: 'nunito bold';
+    transition: 0.5s;
+}
+.service-card1 p{
+    color: #fff;
+    transition: 0.5s;
+}
+.about-img{
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+}
+.about-content{
+    text-align: center;
+    padding: 20px 52px;
+    background: rgb(246, 246, 246);
+}
+.our-services .service-card{
+    margin-bottom: 25px;
+}
+.service-heading h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+.service-heading p{
+    padding-bottom: 20px;
+}
+footer{
+    background: #44b272;
+    padding: 14px 0;
+}
+footer .copyright{
+    text-align: center;
+}
+.copyright span{
+    font-weight: 600;
+    color: #fff;
+}
+.copyright span a{
+    font-weight: 600;
+    color: #fff;
+}
+.testimonial-banner{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/test.jpg);
+    background-size: cover;
+    padding: 52px 0;
+    background-attachment: fixed;
+}
+.testimonial-heading {
+    color: #fff;
+    text-align: center;
+    padding: 0 233px 24px 233px;
+}
+.testimonial-heading h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+.test-card{
+    background: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+.test-card img{
+        /* height: 116px; */
+        width: 90px;
+        -webkit-border-radius: 116px;
+        -khtml-border-radius: 116px;
+        -moz-border-radius: 116px;
+        -ms-border-radius: 116px;
+        -o-border-radius: 116px;
+        border-radius: 116px;
+        /* border: 4px solid #fff; */
+        -webkit-box-shadow: 0 9px 10px rgb(255 51 179 / 41%);
+        -khtml-box-shadow: 0 9px 10px rgba(255,51,179,.41);
+        -moz-box-shadow: 0 9px 10px rgba(255,51,179,.41);
+        -ms-box-shadow: 0 9px 10px rgba(255,51,179,.41);
+        -o-box-shadow: 0 9px 10px rgba(255,51,179,.41);
+        /* box-shadow: 0 9px 10px rgb(255 51 179 / 41%); */
+        margin: 0 auto 34px;
+        position: relative;
+}
+.test-card::before{
+        content: '';
+    z-index: -1;
+    height: 150px;
+    width: 255px;
+     background-image: -webkit-linear-gradient(
+120deg
+,#0841c6,#05c6fb);
+    background-image: -moz-linear-gradient(120deg,#0841c6,#05c6fb);
+    background-image: -ms-linear-gradient(120deg,#0841c6,#05c6fb);
+    background-image: -o-linear-gradient(120deg,#0841c6,#05c6fb);
+     background-image: linear-gradient(
+120deg
+,#0841c6,#05c6fb);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0841c6',endColorStr='#05c6fb');
+    position: absolute;
+    -webkit-border-radius: 38px;
+    -khtml-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+    border-radius: 38px;
+    top: -107px;
+    left: -62px;
+    -webkit-transform: rotate(
+-44deg
+);
+z-index: 999;
+    -khtml-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    transform: rotate(
+-44deg
+);
+    -webkit-transition: all 300ms linear 0ms;
+    -khtml-transition: all 300ms linear 0ms;
+    -moz-transition: all 300ms linear 0ms;
+    -ms-transition: all 300ms linear 0ms;
+    -o-transition: all 300ms linear 0ms;
+    transition: all 300ms linear 0ms;
+    opacity: .1;
+}
+.slide-padding{
+    padding: 0 63px 0 29px;
+}
+.contact-img img{
+    width: 100%;
+}
+.form-heading h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+.contact-form{
+    padding: 10px 0 0 0;
+}
+.submit-button button{
+    width: 100%;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+.service-detail{
+    padding-top: 34px;
+}
+  .service-img img{
+      width: 90%;
+  }
+  .service-detail h4{
+    font-size: 18px;
+    font-family: 'Nunito bold';
+    color: #44b272;
+  }
+  .service-detail h2{
+    font-size: 37px;
+    font-family: 'Nunito extra-bold';
+    padding-bottom: 15px;
+  }
+  .services{
+    padding-top: 5px;
+  }
+  .services ul{
+    list-style: none;
+  }
+  .services ul h3{
+    font-family: 'Nunito bold';
+    font-size: 22px;
+  }
+  .services ul li{
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  .services ul li i{
+    color: #44b272;
+    margin-right: 6px;
+  }
+  .services ul li:hover{
+    margin-left: 5px;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+
+  .img1{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+.service-img .img1 {
+    width: 90%;
+    animation: mymove 40s infinite;
+}
+
+@keyframes mymove {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.about-img img{
+    width: 90%;
+}
+.about-detail h4{
+  font-size: 18px;
+  font-family: 'Nunito bold';
+  color: #44b272;
+}
+.about-detail h2{
+  font-size: 37px;
+  font-family: 'Nunito extra-bold';
+  padding-bottom: 15px;
+}
+.about{
+  padding-top: 5px;
+}
+.about ul{
+  list-style: none;
+}
+.about ul h3{
+  font-family: 'Nunito bold';
+  font-size: 22px;
+}
+.about ul li{
+  font-size: 15px;
+  transition: 0.5s;
+}
+.about ul li i{
+  color: #44b272;
+  margin-right: 6px;
+}
+.about ul li:hover{
+  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.about-detail{
+    padding-top: 45px;
+}
+.contact-detail h3{
+    font-size: 27px;
+    font-weight: 700;
+}
+.contact-detail a{
+    color: #3c3c3c;
+    font-family: 'Nunito bold';
+}
+.follow ul{
+    list-style: none;
+    display: flex;
+}
+.follow ul li a i {
+    border: 1px solid;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 2;
+}
+.follow{
+    padding-top: 15px;
+}
+.follow h4{
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.service-heading{
+    text-align: center;
+    padding: 0 233px 24px 233px;
+}
+.service-heading h2{
+    font-size: 27px;
+    font-weight: 700;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff !important;
+    background-color: #44b272 !important;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.nav-item .nav-link{
+    color: #3c3c3c;
+    font-family: 'nunito bold';
+}
+.nav.nav-tabs{
+    width: 61%;
+    margin: auto;
+}
+.tab-img img{
+    width: 100%;
+}
+.tab-heading{
+    padding-top: 10px;
+}
+.tab-heading h3{
+    font-family: 'Nunito bold';
+    font-size: 21px;
+}
